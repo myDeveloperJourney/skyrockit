@@ -7,6 +7,8 @@ const passUserToView = (req, res, next) => {
     next(); // call the next piece of middleware
 }
 
+module.exports = passUserToView;
+
 /*
 if(req.session.user) {
     res.locals.user = req.session.user
@@ -14,3 +16,4 @@ if(req.session.user) {
     res.locals.user = null
 }
 */
+
